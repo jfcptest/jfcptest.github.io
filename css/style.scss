@@ -26,11 +26,49 @@ body {
 }
 
 .monopoly {
-    display: grid;
+    display: block;
     width: 50%;
     padding-bottom: 45%;
     max-height: 95%;
+
     background-color: $boardColor;
+
+    .monopoly-board {
+        display: grid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        grid-template-columns: 15.38% 69.21% 15.38%;
+        grid-template-rows: 15.38% 69.21% 15.38%;
+        grid-template-areas: 
+            "monopoly__row3 monopoly__row3 monopoly__row4"
+            "monopoly__row2 monopoly__center monopoly__row4"
+            "monopoly__row2 monopoly__row1 monopoly__row1";
+
+        .monopoly__row1 {
+            grid-area: monopoly__row1;
+            background: red;
+        }
+        .monopoly__row2 {
+            grid-area: monopoly__row2;
+            background: blue;
+        }
+        .monopoly__row3 {
+            grid-area: monopoly__row3;
+            background: yellow;
+        }
+        .monopoly__row4 {
+            grid-area: monopoly__row4;
+            background: green;
+        }
+        .monopoly__center {
+            grid-area: monopoly__center;
+            background: purple;
+        }
+    }
 }
 
 /* Responsive - Tablet */
