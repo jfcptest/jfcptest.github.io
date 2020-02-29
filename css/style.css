@@ -208,9 +208,9 @@ body {
 .monopoly .monopoly__board .monopoly__row2 .normalcell .name {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  height: 100%;
-  margin-right: 0.6rem;
-  padding: 0.3rem 0;
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0 1.4rem;
   word-wrap: break-word;
 }
 
@@ -348,9 +348,9 @@ body {
 .monopoly .monopoly__board .monopoly__row4 .normalcell .name {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  height: 100%;
-  margin-left: 0.6rem;
-  padding: 0.3rem 0;
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0 1.4rem;
   word-wrap: break-word;
 }
 
@@ -371,4 +371,15 @@ body {
 
 /* Responsive - Tablet */
 /* Responsive - Mobile */
+@media (min-width: 320px) and (max-width: 740px) {
+  .monopoly {
+    display: block;
+    width: 90%;
+    padding-bottom: 85%;
+    max-height: 95%;
+  }
+  .monopoly .monopoly__board .bigcell, .monopoly .monopoly__board .normalcell {
+    font-size: 0.8vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
