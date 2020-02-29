@@ -194,9 +194,9 @@ body {
 
                 .name{
                     transform: rotate(90deg);
-                    width: 100%;
-                    margin-top: 0.6rem;
-                    padding: 0 1.4rem;
+                    height: 100%;
+                    margin-right: 0.6rem;
+                    padding: 0.3rem 0;
                     word-wrap: break-word;
                 }
             }
@@ -323,9 +323,9 @@ body {
 
                 .name{
                     transform: rotate(-90deg);
-                    width: 100%;
-                    margin-top: 0.6rem;
-                    padding: 0 1.4rem;
+                    height: 100%;
+                    margin-left: 0.6rem;
+                    padding: 0.3rem 0;
                     word-wrap: break-word;
                 }
             }
@@ -357,16 +357,5 @@ body {
 
 /* Responsive - Mobile */
 @media (min-width: 320px) and (max-width: 740px){
-    .monopoly {
-        display: block;
-        width: 90%;
-        padding-bottom: 85%;
-        max-height: 95%;
 
-        .monopoly__board {
-            .bigcell, .normalcell {
-                font-size: 0.8vw;
-            }
-        }
-    }
 }
