@@ -105,7 +105,7 @@ body {
 
                 .name {
                     position: absolute;
-                    top: 0;
+                    top: 0.7rem;
                     left: 0;
                     margin-top: 0;
                     transform: rotate(-45deg);
@@ -169,10 +169,11 @@ body {
 
                 .name {
                     position: absolute;
-                    top: 0.9rem;
-                    right: 2rem;
+                    top: 0.5rem;
+                    right: 0.5rem;
                     margin-top: 0;
                     transform: rotate(45deg);
+                    font-size: 0.6vw;
                 }
             }
     
@@ -229,6 +230,15 @@ body {
             .bigcell {
                 width: 18.18%;
                 height: 100%;
+
+                .name {
+                    position: absolute;
+                    bottom: 0.75rem;
+                    right: 0rem;
+                    margin-top: 0;
+                    transform: rotate(135deg);
+                    font-size: 0.6vw;
+                }
             }
     
             .normalcell {
@@ -286,6 +296,15 @@ body {
             .bigcell {
                 width: 100%;
                 height: 18.18%;
+
+                .name {
+                    position: absolute;
+                    bottom: 0.6rem;
+                    left: 0.3rem;
+                    margin-top: 0;
+                    transform: rotate(225deg);
+                    font-size: 0.6vw;
+                }
             }
     
             .normalcell {
