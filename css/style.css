@@ -87,8 +87,34 @@ body {
 }
 
 .monopoly .monopoly__board .monopoly__row1 .normalcell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 9.09%;
   height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.monopoly .monopoly__board .monopoly__row1 .normalcell .cell-color {
+  width: 100%;
+  height: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row1 .first-avns .cell-color {
+  background-color: #AA5433;
+}
+
+.monopoly .monopoly__board .monopoly__row1 .second-avns .cell-color {
+  background-color: #93E0FD;
 }
 
 .monopoly .monopoly__board .monopoly__row2 {
@@ -116,8 +142,34 @@ body {
 }
 
 .monopoly .monopoly__board .monopoly__row2 .normalcell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 9.09%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.monopoly .monopoly__board .monopoly__row2 .normalcell .cell-color {
+  width: 1rem;
+  height: 100%;
+  border-left: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row2 .third-avns .cell-color {
+  background-color: #FB379D;
+}
+
+.monopoly .monopoly__board .monopoly__row2 .fourth-avns .cell-color {
+  background-color: #FF9500;
 }
 
 .monopoly .monopoly__board .monopoly__row3 {
@@ -141,8 +193,34 @@ body {
 }
 
 .monopoly .monopoly__board .monopoly__row3 .normalcell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 9.09%;
   height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.monopoly .monopoly__board .monopoly__row3 .normalcell .cell-color {
+  width: 100%;
+  height: 1rem;
+  border-top: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row3 .fifth-avns .cell-color {
+  background-color: #FF1420;
+}
+
+.monopoly .monopoly__board .monopoly__row3 .sixth-avns .cell-color {
+  background-color: #FFF100;
 }
 
 .monopoly .monopoly__board .monopoly__row4 {
@@ -170,8 +248,30 @@ body {
 }
 
 .monopoly .monopoly__board .monopoly__row4 .normalcell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 9.09%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.monopoly .monopoly__board .monopoly__row4 .normalcell .cell-color {
+  width: 1rem;
+  height: 100%;
+  border-right: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row4 .seventh-avns .cell-color {
+  background-color: #00B453;
+}
+
+.monopoly .monopoly__board .monopoly__row4 .eight-avns .cell-color {
+  background-color: #0072C1;
 }
 
 .monopoly .monopoly__board .monopoly__center {
