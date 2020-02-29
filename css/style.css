@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+@font-face {
+  font-family: Spartan;
+  src: url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -62,6 +70,13 @@ body {
           justify-content: center;
 }
 
+.monopoly .monopoly__board .bigcell, .monopoly .monopoly__board .normalcell {
+  font-family: "Spartan", Helvetica, Arial, sans-serif;
+  font-size: 0.4vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .monopoly .monopoly__board .monopoly__row1 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
@@ -86,6 +101,15 @@ body {
   height: 100%;
 }
 
+.monopoly .monopoly__board .monopoly__row1 .bigcell .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .monopoly .monopoly__board .monopoly__row1 .normalcell {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,6 +131,13 @@ body {
   width: 100%;
   height: 1rem;
   border-bottom: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row1 .normalcell .name {
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0 0.3rem;
+  word-wrap: break-word;
 }
 
 .monopoly .monopoly__board .monopoly__row1 .first-avns .cell-color {
@@ -141,6 +172,15 @@ body {
   height: 18.18%;
 }
 
+.monopoly .monopoly__board .monopoly__row2 .bigcell .name {
+  position: absolute;
+  top: 0.9rem;
+  right: 2rem;
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .monopoly .monopoly__board .monopoly__row2 .normalcell {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,6 +202,15 @@ body {
   width: 1rem;
   height: 100%;
   border-left: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row2 .normalcell .name {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 100%;
+  margin-right: 0.6rem;
+  padding: 0.3rem 0;
+  word-wrap: break-word;
 }
 
 .monopoly .monopoly__board .monopoly__row2 .third-avns .cell-color {
@@ -215,6 +264,15 @@ body {
   border-top: 2px solid black;
 }
 
+.monopoly .monopoly__board .monopoly__row3 .normalcell .name {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 100%;
+  margin-bottom: 0.6rem;
+  padding: 0 0.3rem;
+  word-wrap: break-word;
+}
+
 .monopoly .monopoly__board .monopoly__row3 .fifth-avns .cell-color {
   background-color: #FF1420;
 }
@@ -264,6 +322,15 @@ body {
   width: 1rem;
   height: 100%;
   border-right: 2px solid black;
+}
+
+.monopoly .monopoly__board .monopoly__row4 .normalcell .name {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 100%;
+  margin-left: 0.6rem;
+  padding: 0.3rem 0;
+  word-wrap: break-word;
 }
 
 .monopoly .monopoly__board .monopoly__row4 .seventh-avns .cell-color {

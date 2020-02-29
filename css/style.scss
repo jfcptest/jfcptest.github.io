@@ -1,3 +1,13 @@
+// Fonts.
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+@font-face {
+	font-family: Spartan;
+	src: url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+	font-weight: normal;
+	font-style: normal;
+}
+
 // Variables.
 $boardColor: #C6D7E0;
 $firstAvenuesColor: #AA5433;
@@ -8,6 +18,8 @@ $fifthAvenuesColor: #FF1420;
 $sixthAvenuesColor: #FFF100;
 $seventhAvenuesColor: #00B453;
 $eightAvenuesColor: #0072C1;
+
+$fontStack: Helvetica, Arial, sans-serif;
 
 * {
     box-sizing: border-box;
@@ -65,6 +77,13 @@ body {
             justify-content: center;
         }
 
+        .bigcell, .normalcell {
+            font-family: 'Spartan', $fontStack;
+            font-size: 0.4vw;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
         .monopoly__row1 {
             grid-area: monopoly__row1;
 
@@ -83,6 +102,14 @@ body {
             .bigcell {
                 width: 18.18%;
                 height: 100%;
+
+                .name {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-top: 0;
+                    transform: rotate(-45deg);
+                }
             }
     
             .normalcell {
@@ -98,6 +125,13 @@ body {
                     width: 100%;
                     height: 1rem;
                     border-bottom: 2px solid black;
+                }
+
+                .name{
+                    width: 100%;
+                    margin-top: 0.6rem;
+                    padding: 0 0.3rem;
+                    word-wrap: break-word;
                 }
             }
 
@@ -132,6 +166,14 @@ body {
             .bigcell {
                 width: 100%;
                 height: 18.18%;
+
+                .name {
+                    position: absolute;
+                    top: 0.9rem;
+                    right: 2rem;
+                    margin-top: 0;
+                    transform: rotate(45deg);
+                }
             }
     
             .normalcell {
@@ -147,6 +189,14 @@ body {
                     width: 1rem;
                     height: 100%;
                     border-left: 2px solid black;
+                }
+
+                .name{
+                    transform: rotate(90deg);
+                    height: 100%;
+                    margin-right: 0.6rem;
+                    padding: 0.3rem 0;
+                    word-wrap: break-word;
                 }
             }
 
@@ -195,6 +245,14 @@ body {
                     height: 1rem;
                     border-top: 2px solid black;
                 }
+
+                .name{
+                    transform: rotate(180deg);
+                    width: 100%;
+                    margin-bottom: 0.6rem;
+                    padding: 0 0.3rem;
+                    word-wrap: break-word;
+                }
             }
 
             .fifth-avns{
@@ -242,6 +300,14 @@ body {
                     width: 1rem;
                     height: 100%;
                     border-right: 2px solid black;
+                }
+
+                .name{
+                    transform: rotate(-90deg);
+                    height: 100%;
+                    margin-left: 0.6rem;
+                    padding: 0.3rem 0;
+                    word-wrap: break-word;
                 }
             }
 
