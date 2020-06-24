@@ -3,7 +3,7 @@ let engine = new BABYLON.Engine(canvas, true);
 let scene = null;
 
 // FPS.
-let divFPS = document.getElementById('fps');
+//let divFPS = document.getElementById('fps');
 
 window.addEventListener('DOMContentLoaded', function() {
 
@@ -17,7 +17,7 @@ function initialSetup() {
 
     engine.runRenderLoop(function(){
         //scene.render();
-        divFPS.innerHTML = engine.getFps().toFixed() + ' fps';
+        //divFPS.innerHTML = engine.getFps().toFixed() + ' fps';
     });
 
     window.addEventListener('resize', function(){
