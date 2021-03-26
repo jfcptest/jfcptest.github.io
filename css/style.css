@@ -1,0 +1,188 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/Karla-Regular.ttf);
+}
+
+@font-face {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 100;
+  src: url(../assets/fonts/Karla-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Karla;
+  font-style: italic;
+  font-weight: 100;
+  src: url(../assets/fonts/Karla-ExtraLightItalic.ttf);
+}
+
+@font-face {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../assets/fonts/Karla-SemiBold.ttf);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1C1C1C;
+}
+
+.container.main-title, .container.content {
+  max-width: 700px;
+}
+
+.container.image {
+  max-width: 1000px;
+}
+
+.container.main-title {
+  margin: 5rem 0 3rem 0;
+  text-align: center;
+}
+
+.container.main-title h1, .container.main-title h3, .container.main-title h4 {
+  color: white;
+}
+
+.container.main-title h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.container.main-title h3 {
+  margin: 0 0 0.125rem 0;
+}
+
+.container.main-title h4 {
+  margin: 0 0 0.125rem 0;
+}
+
+.container.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container.content h2 {
+  margin: 2rem 0 2rem 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #EFC69B;
+  font-family: Karla, Helvetica, sans-serif, Arial;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.container.content p, .container.content ul {
+  margin: 0 0 2rem 0;
+  color: #E0E0E0;
+  font-family: Karla, Helvetica, sans-serif, Arial;
+  font-size: 1.375rem;
+  font-weight: 100;
+  line-height: 1.325;
+}
+
+.container.content p.p-italic, .container.content ul.p-italic {
+  width: 90%;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.container.content ul {
+  width: 80%;
+}
+
+.container.content ul li {
+  margin: 0 0 0.625rem 0;
+}
+
+.container.content a {
+  color: #74A4BC;
+}
+
+.container.content span.span-italic {
+  font-style: italic;
+}
+
+.container.content span.span-bold {
+  font-weight: 600;
+}
+
+.container.image {
+  margin: 3rem 0 5rem 0;
+}
+
+.container.image img {
+  width: 100%;
+  height: auto;
+}
+
+.container.image img.single-image-description {
+  margin: 0 0 1rem 0;
+}
+
+.container.image img.multi-image {
+  margin: 0 0 3rem 0;
+}
+
+.container.image img.multi-image:last-child {
+  margin: 0;
+}
+
+.container.image img.multi-image-description {
+  margin: 0 0 3rem 0;
+}
+
+.container.image img.multi-image-description:last-of-type {
+  margin: 0 0 1rem 0;
+}
+
+.container.image span.image-description {
+  display: block;
+  text-align: center;
+  color: #808080;
+  font-family: Karla, Helvetica, sans-serif, Arial;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.325;
+}
+/*# sourceMappingURL=style.css.map */
