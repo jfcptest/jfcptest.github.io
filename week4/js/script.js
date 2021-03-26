@@ -102,28 +102,6 @@ function  main() {
     let bufferLength = analyser.frequencyBinCount;
     let dataArray = new Uint8Array(bufferLength);
 
-    // Lows, mids, highs.
-    let low = audioContext.createBiquadFilter();
-    low.type = 'lowshelf';
-    low.frequency.value = 320.0;
-    low.gain.value = 0.0;
-    low.connect(audioContext.destination);
-
-    let mid = audioContext.createBiquadFilter();
-    mid.type = 'peaking';
-    mid.frequency.value = 1000.0;
-    mid.Q.value = 0.5;
-    mid.gain.value = 0.0;
-    mid.connect(low);
-
-    let high = audioContext.createBiquadFilter();
-    high.type = 'highshelf';
-    high.frequency.value = 3200.0;
-    high.gain.value = 0.0;
-    high.connect(mid);
-
-    audioSrc.connect(analyser);
-
     function render(time) {
         time *= 0.001;  // convert time to seconds
        
@@ -154,7 +132,7 @@ function  main() {
         //console.log(lowerMax, lowerAvg, upperMax, upperAvg);
         //console.log(lowerMaxFr, lowerAvgFr, upperMaxFr, upperAvgFr);
 
-        console.log(low, mid, high);
+        //console.log(low, mid, high);
 
         shapes[0].scale.set(lowerAvgFr, lowerAvgFr, lowerAvgFr);
         shapes[1].scale.set(upperMaxFr, upperMaxFr, upperMaxFr);
