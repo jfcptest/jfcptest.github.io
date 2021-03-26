@@ -55,21 +55,17 @@ body {
   background-color: #1C1C1C;
 }
 
-.container.main-title, .container.content {
-  max-width: 700px;
-}
-
-.container.image {
-  max-width: 1000px;
-}
-
 .container.main-title {
-  margin: 5rem 0 3rem 0;
+  width: 100%;
+  padding: 6rem 0 4rem 0;
   text-align: center;
+  background-color: #576CA8;
 }
 
 .container.main-title h1, .container.main-title h3, .container.main-title h4 {
-  color: white;
+  font-family: Karla, Helvetica, sans-serif, Arial;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .container.main-title h1 {
@@ -78,6 +74,7 @@ body {
 
 .container.main-title h3 {
   margin: 0 0 0.125rem 0;
+  font-weight: 100;
 }
 
 .container.main-title h4 {
@@ -100,13 +97,14 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  max-width: 700px;
 }
 
 .container.content h2 {
   margin: 2rem 0 2rem 0;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  color: #EFC69B;
+  color: #CFD6EA;
   font-family: Karla, Helvetica, sans-serif, Arial;
   font-size: 2rem;
   font-weight: 600;
@@ -149,6 +147,7 @@ body {
 
 .container.image {
   margin: 3rem 0 5rem 0;
+  max-width: 1000px;
 }
 
 .container.image img {
@@ -184,5 +183,9 @@ body {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.325;
+}
+
+.container.image span.image-description a {
+  color: #576CA8;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,8 +2,9 @@ $pFontStack: Karla, Helvetica, sans-serif, Arial;
 $darkGrey: #1C1C1C;
 $lighGreyText: #E0E0E0;
 $lighGreyText2: #808080;
-//$h2Colour: #F46036;
-$h2Colour: #EFC69B;
+//$h2Colour: #F6F7EB;
+$h2Colour: #CFD6EA;
+$aColour: #576CA8;
 
 * {
     box-sizing: border-box;
@@ -55,22 +56,21 @@ body {
 }
 
 .container {
-    
-    &.main-title, &.content {
-        max-width: 700px;
-    }
-
-    &.image {
-        max-width: 1000px;
-    }
 
     &.main-title {
-        margin: 5rem 0 3rem 0;
+        width: 100%;
+        padding: 6rem 0 4rem 0;
 
         text-align: center;
 
+        background-color: $aColour;
+
         h1, h3, h4 {
-            color: white;
+
+            font-family: $pFontStack;
+            font-weight: 600;
+
+            color: #ffffff;
         }
 
         h1 {
@@ -79,6 +79,8 @@ body {
 
         h3 {
             margin: 0 0 0.125rem 0;
+
+            font-weight: 100;
         }
 
         h4 {
@@ -92,6 +94,8 @@ body {
         justify-content: flex-start;
         align-items: center;
         align-content: center;
+
+        max-width: 700px;
 
         h2 {
             margin: 2rem 0 2rem 0;
@@ -145,6 +149,8 @@ body {
 
     &.image {
         margin: 3rem 0 5rem 0;
+
+        max-width: 1000px;
        
         img {
             width: 100%;
@@ -179,6 +185,10 @@ body {
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.325;
+
+            a {
+                color: $aColour;
+            }
         }
     }
 }
