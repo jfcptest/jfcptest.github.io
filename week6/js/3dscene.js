@@ -33,7 +33,7 @@ const sceneSkybox = textureLoader.load(
 const cameraFov = 75;
 const cameraAspect = window.innerWidth / window.innerHeight;
 const cameraNear = 0.1;
-const cameraFar = 100;
+const cameraFar = 20;
 
 const camera = new THREE.PerspectiveCamera(cameraFov, cameraAspect, cameraNear, cameraFar); // Camera.
 const cameraControls = new OrbitControls(camera, renderer.domElement); // Camera controls.
